@@ -259,7 +259,7 @@ typedef struct {
 #if defined(__HDK_LINKIT_ONE_V1__)
 #define VM_DCL_PIN_TABLE_SIZE 26
 #elif defined(__HDK_LINKIT_ASSIST_2502__)
-#define VM_DCL_PIN_TABLE_SIZE 15
+#define VM_DCL_PIN_TABLE_SIZE 23
 #else
 #define VM_DCL_PIN_TABLE_SIZE 1
 #endif
@@ -309,7 +309,16 @@ static const VM_DCL_PIN_MUX pinTable[VM_DCL_PIN_TABLE_SIZE] = {
     { VM_PIN_P11, 0, 12, 0, { VM_DCL_PIN_MODE_GPIO, VM_DCL_PIN_MODE_EINT, VM_DCL_PIN_MODE_ADC, 0, 0, 0, 0, 0, 0, 0 } },
     { VM_PIN_P12, 1, 15, 0, { VM_DCL_PIN_MODE_GPIO, VM_DCL_PIN_MODE_EINT, VM_DCL_PIN_MODE_ADC, 0, 0, 0, 0, 0, 0, 0 } },
     { VM_PIN_P13, 2, 13, 0, { VM_DCL_PIN_MODE_GPIO, VM_DCL_PIN_MODE_EINT, VM_DCL_PIN_MODE_ADC, 0, 0, 0, 0, 0, 0, 0 } },
-    { VM_PIN_P14, 23, 0, 0, { 0, 0, VM_DCL_PIN_MODE_EINT, 0, 0, 0, 0, 0, 0, 0 } }
+    { VM_PIN_P14, 23, 0, 0, { 0, 0, VM_DCL_PIN_MODE_EINT, 0, 0, 0, 0, 0, 0, 0 } },
+    
+    { VM_PIN_P15, 0, 0, 0, { VM_DCL_PIN_MODE_GPIO, 0, 0, 0, 0, 0, 0, 0, 0, 0 } },
+    { VM_PIN_P16, 0, 0, 0, { VM_DCL_PIN_MODE_GPIO, 0, 0, 0, 0, 0, 0, 0, 0, 0 } },
+    { VM_PIN_P17, 0, 0, 0, { VM_DCL_PIN_MODE_GPIO, 0, 0, 0, 0, 0, 0, 0, 0, 0 } },
+    { VM_PIN_P18, 0, 0, 0, { VM_DCL_PIN_MODE_GPIO, 0, 0, 0, 0, 0, 0, 0, 0, 0 } },
+    { VM_PIN_P19, 0, 0, 0, { VM_DCL_PIN_MODE_GPIO, 0, 0, 0, 0, 0, 0, 0, 0, 0 } },
+    { VM_PIN_P20, 0, 0, 0, { VM_DCL_PIN_MODE_GPIO, 0, 0, 0, 0, 0, 0, 0, 0, 0 } },
+    { VM_PIN_P21, 0, 0, 0, { VM_DCL_PIN_MODE_GPIO, 0, 0, 0, 0, 0, 0, 0, 0, 0 } },
+    { VM_PIN_P22, 0, 0, 0, { VM_DCL_PIN_MODE_GPIO, 0, 0, 0, 0, 0, 0, 0, 0, 0 } }
 };
 #else
 static const VM_DCL_PIN_MUX pinTable[VM_DCL_PIN_TABLE_SIZE] = {
@@ -405,7 +414,16 @@ static VM_DCL_PIN_HANDLE pinHandleTable[VM_DCL_PIN_TABLE_SIZE] = {
     { VM_PIN_P11, 0, VM_DCL_HANDLE_INVALID },
     { VM_PIN_P12, 0, VM_DCL_HANDLE_INVALID },
     { VM_PIN_P13, 0, VM_DCL_HANDLE_INVALID },
-    { VM_PIN_P14, 0, VM_DCL_HANDLE_INVALID }
+    { VM_PIN_P14, 0, VM_DCL_HANDLE_INVALID },
+    
+    { VM_PIN_P15, 0, VM_DCL_HANDLE_INVALID },
+    { VM_PIN_P16, 0, VM_DCL_HANDLE_INVALID },
+    { VM_PIN_P17, 0, VM_DCL_HANDLE_INVALID },
+    { VM_PIN_P18, 0, VM_DCL_HANDLE_INVALID },
+    { VM_PIN_P19, 0, VM_DCL_HANDLE_INVALID },
+    { VM_PIN_P20, 0, VM_DCL_HANDLE_INVALID },
+    { VM_PIN_P21, 0, VM_DCL_HANDLE_INVALID },
+    { VM_PIN_P22, 0, VM_DCL_HANDLE_INVALID }
 };
 
 int gpio_get_handle(int pin, VM_DCL_HANDLE *handle)

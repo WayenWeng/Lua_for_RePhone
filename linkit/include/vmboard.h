@@ -99,6 +99,16 @@ typedef enum
 #define VM_PIN_P12 1      /* Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_EINT / VM_DCL_PIN_MODE_ADC */
 #define VM_PIN_P13 2      /* Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_EINT / VM_DCL_PIN_MODE_ADC */
 #define VM_PIN_P14 52     /* Pin mux, VM_DCL_PIN_MODE_EINT */
+
+#define VM_PIN_P15 12
+#define VM_PIN_P16 15
+#define VM_PIN_P17 17
+#define VM_PIN_P18 46
+#define VM_PIN_P19 47
+#define VM_PIN_P20 48
+#define VM_PIN_P21 49
+#define VM_PIN_P22 50
+
 #else
 #define VM_PIN_P0 0
 #endif
